@@ -10,9 +10,8 @@ function Login() {
 
 
   return (
-    <div className="bg-blue-900 text-white relative">
-
-      <h1 className="text-center">Login Screen</h1>
+    <div className="bg-gradient-to-b from-gray-900
+     to-blue-900 text-white relative">
 
       <div className="flex flex-col absolute z-50 w-full items-center justify-center h-4/6 gap-4">
         <Image src={ragna} height={200} width={200}/>
