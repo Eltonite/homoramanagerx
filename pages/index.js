@@ -3,13 +3,15 @@ import Login from '../components/Login'
 import styles from '../styles/Home.module.css'
 import { useMoralis } from 'react-moralis'
 import Headerhome from '../components/Headerhome'
+import Startgame from '../components/Startgame'
 
 export default function Home() {
   const {isAuthenticated, logout} = useMoralis()
 
 
-
-  if (!isAuthenticated) return <Login />
+  if (!isAuthenticated) {
+    return <Login />
+  }
 
   return (
     <div className='h-screen overflow-y-scroll bg-gradient-to-b from-gray-900
@@ -20,9 +22,16 @@ export default function Home() {
       </Head>
 
       <div className='flex flex-col max-w-screen-2xl mx-auto'>
-        <Headerhome />
-        <button className='justify-center' onClick={logout}>LOGOUT</button>
+        
+        <Headerhome className=""/>
+        
+        <Startgame className=""/>
+
+        <button className='text-center' onClick={logout}>LOGOUT</button>
+
       </div>
+
+      
       
     </div>
   )
