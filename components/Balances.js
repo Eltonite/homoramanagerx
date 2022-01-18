@@ -24,16 +24,8 @@ function Balances() {
   const { data: balance } = useNativeBalance();
 
   return (
-    <div className="text-white text-center font-semibold m-3 p-3">
-
-      <div>
-        <h1 className="p-3 text-3xl">My Native Balance
-        </h1>
-
-        <div className="p-3">
-          {balance.formatted}
-        </div>
-      </div>
+    <div className="rounded-xl border-2 px-3">
+      {balance.formatted}
     </div>
   )
 }

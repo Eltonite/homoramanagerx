@@ -34,7 +34,7 @@ function Transactions() {
     <div className="text-center">
       <div>
         <h1 className="p-3 text-3xl text-white">
-          Transactions
+          My Transactions
         </h1>
 
         <div>
